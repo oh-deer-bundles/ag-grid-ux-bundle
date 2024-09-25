@@ -1,0 +1,39 @@
+{
+    "name": "@oh-deer-bundles/ag-grid-ux-bundle",
+    "description": "ag-grid-community.js integration for Symfony",
+    "license": "MIT",
+    "version": "0.1.0",
+    "type": "module",
+    "main": "dist/controller.js",
+    "types": "dist/controller.d.ts",
+    "symfony": {
+        "controllers": {
+            "ag-grid": {
+                "main": "dist/controller.js",
+                "webpackMode": "eager",
+                "fetch": "eager",
+                "enabled": true
+
+            }
+        },
+        "importmap": {
+            "@hotwired/stimulus": "^3.0.0",
+            "ag-grid-community": "^32.1.0",
+            "@ag-grid-community/styles/ag-grid.min.css": "^32.2.0",
+            "@ag-grid-community/styles/ag-theme-alpine.min.css": "^32.2.0",
+            "@ag-grid-community/styles/ag-theme-balham.min.css": "^32.2.0",
+            "@ag-grid-community/styles/ag-theme-material.min.css": "^32.2.0",
+            "@ag-grid-community/styles/ag-theme-quartz.min.css": "^32.2.0"
+        }
+    },
+    "peerDependencies": {
+        "@hotwired/stimulus": "^3.0.0",
+        "ag-grid-community": "^32.1.0",
+        "@ag-grid-community/styles": "^32.2.0"
+    },
+    "devDependencies": {
+        "@hotwired/stimulus": "^3.0.0",
+        "ag-grid-community": "^32.1.0",
+        "@ag-grid-community/styles": "^32.2.0"
+    }
+}
