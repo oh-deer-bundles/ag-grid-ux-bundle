@@ -1,7 +1,7 @@
 {
   "name": "oh-deer-bundles/ag-grid-ux-bundle",
   "type": "symfony-bundle",
-  "description": "Renders local and remote SVG icons in your Twig templates.",
+  "description": "Quickly implements AG Grid Community js library in Symfony application.",
   "keywords": [
     "symfony-ux"
   ],
