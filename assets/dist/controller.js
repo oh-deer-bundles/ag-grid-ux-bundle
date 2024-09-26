@@ -33,8 +33,8 @@ class default_1 extends Controller {
                 })
             }
 
-            this.gridOptions.onCellValueChanged = this.cellValueChanged;
-            this.gridOptions.onRowValueChanged = this.rowValueChanged;
+            this.gridOptions.onCellValueChanged = this.cellValueChanged.bind(this);
+            this.gridOptions.onRowValueChanged = this.rowValueChanged.bind(this);
 
             this.dispatchEvent('init', {
                 gridOptions: this.gridOptions,
@@ -42,10 +42,6 @@ class default_1 extends Controller {
 
             this.gridApi = createGrid(this.element, this.gridOptions);
             this.dispatchEvent('loaded', {agGridApi: this.gridApi});
-
-            this.gridApi.onCellValueChanged(e => {
-                console.log(e)
-            })
         }
     }
 

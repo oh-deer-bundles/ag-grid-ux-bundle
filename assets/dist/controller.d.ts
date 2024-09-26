@@ -7,7 +7,7 @@ export default class extends Controller {
     private gridOptions;
     private gridApi;
     connect(): void;
-    cellValueChanged(event: any): void;
-    rowValueChanged(event: any): void;
+    private cellValueChanged;
+    private rowValueChanged;
     private dispatchEvent;
 }
